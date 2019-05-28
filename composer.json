@@ -1,0 +1,29 @@
+{
+    "name": "rikudou/redis-helper-bundle",
+    "description": "Symfony bundle for rikudou/redis-helper",
+    "type": "symfony-bundle",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Dominik Chrastecky",
+            "email": "dominik@chrastecky.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/framework-bundle": "^4.0",
+        "symfony/yaml": "^4.0",
+        "rikudou/redis-helper": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rikudou\\RedisHelperBundle\\": "src/"
+        }
+    },
+    "scripts": {
+        "fixer": "php-cs-fixer fix src --verbose"
+    }
+}

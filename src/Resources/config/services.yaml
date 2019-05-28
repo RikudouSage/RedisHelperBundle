@@ -1,0 +1,10 @@
+services:
+
+  rikudou.redis_helper.internal.redis_service: ~ # aliased to Redis service, created in compiler pass
+
+  rikudou.redis_helper.helper:
+    class: Rikudou\RedisHelper\RedisHelper
+    arguments:
+      - '@rikudou.redis_helper.internal.redis_service'
+
+  Rikudou\RedisHelper\RedisHelper: '@rikudou.redis_helper.helper'

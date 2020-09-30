@@ -14,8 +14,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "symfony/framework-bundle": "^4.0",
-        "symfony/yaml": "^4.0",
+        "symfony/framework-bundle": "^4.0 || ^5.0",
+        "symfony/yaml": "^4.0 || ^5.0",
         "rikudou/redis-helper": "^1.0"
     },
     "autoload": {
